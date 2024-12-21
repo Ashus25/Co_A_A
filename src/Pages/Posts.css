@@ -1,0 +1,77 @@
+/* Posts container */
+.posts-container {
+  padding-top: 70px; /* Offset for Navbar height */
+  padding: 20px; /* Inner spacing */
+  overflow-y: auto; /* Scrollable content if needed */
+  flex-grow: 1; /* Allows it to take available space in the layout */
+  background-color: #f8f9fa; /* Light background color for contrast */
+  display: flex; /* Center the posts */
+  justify-content: center; /* Horizontal centering */
+}
+
+/* List of posts */
+.posts-list {
+  display: flex;
+  flex-direction: column; /* Stack posts vertically */
+  gap: 15px; /* Space between posts */
+  max-width: 800px; /* Center posts with a max-width */
+  width: 100%; /* Ensure it takes full width below max-width */
+}
+
+/* Individual post card */
+.post-card {
+  padding: 15px;
+  background: #ffffff; /* White background for posts */
+  border: 1px solid #ddd; /* Light border for separation */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+/* Post card hover effect */
+.post-card:hover {
+  transform: scale(1.02); /* Slight scale on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Post title */
+.post-card h2 {
+  margin: 0 0 10px; /* Space below the title */
+  font-size: 18px; /* Adjust font size */
+  color: #343a40; /* Dark gray text color */
+}
+
+/* Post body text */
+.post-card p {
+  margin: 0;
+  font-size: 16px; /* Standard text size */
+  color: #495057; /* Medium gray text color */
+}
+
+/* Loader and end message styles */
+.loader, .end-message {
+  text-align: center;
+  font-size: 16px;
+  color: #6c757d; /* Muted gray color */
+  margin-top: 20px; /* Space above loader or message */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .posts-container {
+    padding: 10px; /* Reduce padding on smaller screens */
+    padding-top: 80px; /* Slightly larger offset for Navbar on smaller screens */
+  }
+
+  .posts-list {
+    gap: 10px; /* Reduce gap between posts */
+  }
+
+  .post-card h2 {
+    font-size: 16px; /* Smaller font size for titles */
+  }
+
+  .post-card p {
+    font-size: 14px; /* Smaller font size for text */
+  }
+}

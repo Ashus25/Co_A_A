@@ -1,0 +1,94 @@
+.navbar {
+  top: 0;
+  width: 100%;
+  height: 60px; /* Navbar height */
+  background-color: #f4f4f4;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.navbar-logo img {
+  width: 40px; /* Adjust logo size */
+  height: 40px;
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.navbar-logo span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar a:hover {
+  color: #ffd700; /* Change color on hover */
+}
+
+.navbar-timer {
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 15px;
+  color: black
+}
+
+.end-class-btn {
+  padding: 8px 15px;
+  background-color: #dc3545; /* Red button for "End Class" */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.end-class-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start;
+  }
+
+  .navbar-logo {
+    margin-bottom: 10px; /* Add space below logo */
+  }
+
+  .navbar a {
+    margin: 5px 0; /* Add spacing between links */
+  }
+
+  .end-class-btn {
+    margin-top: 10px; /* Add space above the button */
+  }
+}
+
+/* Navbar styles */
+
+
+/* Parent container to hold Navbar and Posts */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensure no unintentional scrolling for layout */
+}
+
+/* Navbar styles */
+
